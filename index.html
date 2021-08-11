@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- My custom style -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Travel Company</title>
+
+</head>
+
+<body>
+    <!-- jumbotron -->
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h1>Sun Travel Kyrgyzstan</h1>
+                </div>
+                <div class="col-sm-4 text-right">
+                    <button class="btn btn-info btn-lg" id="bookButton" role="button">Book Now</button> <br />
+                    <!-- <a role="button" class="btn btn-outline-primary" href="1-675-86-970"><i class="fa fa-phone"></i>
+                        1-675-86-970</a><br /> -->
+                    <a role="button" class="btn btn-link" href="suntravel@gmail.com"><i class="fa fa-envelope-o"></i>
+                        suntravel@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- modalForm start -->
+    <div id="bookModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Book your vacation</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form id="bookForm">
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label" for="travelers">Number of
+                                    Persons</label>
+                                <div class="col">
+                                    <select class="form-control" id="travelers" name="travelers">
+                                        <option value="selected">Select...</option>
+                                        <option value="one">1</option>
+                                        <option value="two">2</option>
+                                        <option value="three">3</option>
+                                        <option value="four">4</option>
+                                        <option value="five">5</option>
+                                        <option value="six">6</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label" for="date">Date</label>
+                                <div class="col-sm-6">
+                                    <input class="form-control" type="date" id="date" placeholder="mm/dd/yy">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label" for="type"></label>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col">
+                                    <button class="btn btn-primary" type="submit" href="#">Search</button>
+                                    <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="tours.html">TOURS</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="activities.html">ACTIVITIES</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="promotions.html">PROMOTIONS</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://instagram.com/"><i class="fa fa-instagram"></i>
+                            <span class="sr-only">instagram</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://facebook.com/"><i class="fa fa-facebook"></i>
+                            <span class="sr-only">Facebook</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar  -->
+
+    <!-- carousel starts -->
+
+    <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#homeCarousel" data-slide-to="1"></li>
+            <li data-target="#homeCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="img/kyrgyzstan-4699175_1920.jpg" class="d-block w=100" alt="Mountains" />
+                <div class="carousel-caption">
+                    <h3>Seek a trip less ordinary with Sun Travel Co!</h3>
+                    <div class="col-md-12 mb-4">
+                        <a class="btn btn-rounded btn-info btn-lg" type="button" href="tours.html">Search Places</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/kyrgyzstan-4661838_1920.jpg" class="d-block w=100" alt="Lake" />
+                <div class="carousel-caption">
+                    <h3>Ala-Kul Lake</h3>
+                    <div class="col-md-12 mb-4">
+                        <a class="btn btn-rounded btn-info btn-lg" type="button" href="tours.html">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/mountain-3700494_1920.jpg" class="d-block w-100" alt="Stunning View" />
+                <div class="carousel-caption">
+                    <h3>Enjoy horse riding</h3>
+                    <div class="col-md-12 mb-4">
+                        <a class="btn btn-rounded btn-info btn-lg" type="button" href="tours.html">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- carousel ends -->
+
+    <!-- text and image -->
+
+    <div class="row row-content align-items-center">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <h2>Small group travel that makes a difference </h2>
+            <p class="d-none d-sm-block">We will help you to get your trip planned. Not just trip, but exceptional trips
+                filled with exciting and life-enriching experiences. Our travel agents are experts at handcrafting and
+                coordinating complex itineraries to Kyrgyzstan. Their expertise encompass all logistics, accommodation,
+                guides, transportation, and insider access to exceptional experiences – as well as round the clock
+                support throughout your trip. So, explore Kyrgyzstan with us to get the life’s best travel experience.
+            </p>
+        </div>
+        <div class="col">
+            <div class="media">
+                <div class="media-body align-self-center">
+                    <img class="d-flex ml-3 img-thumbnail" src="img/kg-dishTAbyx9MVDLs-unsplash.jpg"
+                        alt="Travel" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-content align-items-center">
+        <div class="col">
+            <div class="media">
+                <div class="media-body align-self-center">
+                    <img class="d-flex ml-3 img-thumbnail" src="img/oziel-gomez-IbLZjKcelpM-unsplash.jpg"
+                        alt="Breadcrumb Lake thumbnail" />
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <h2>“Fear is only temporary. Regrets last forever”</h2>
+            <p class="d-none d-sm-block">Sun Travel Kyrgyzstan is leading Kyrgyzstan travel agency, we outdo at helping you get your trip planned. Not just trip, but exceptional trips filled with exciting and life-enriching experiences. Our travel agents are experts at handcrafting and coordinating complex itineraries to Kyrgyzstan. Their expertise encompass all logistics, accommodation, guides, transportation, and insider access to exceptional experiences – as well as round the clock support throughout your trip. So, explore Kyrgyzstan with us to get the life’s best travel experience.</p>
+        </div>
+    </div>
+
+        <!-- end text and image -->
+
+        <!-- cards -->
+        <section id="places">
+            <div class="container-fluid">
+                <div class="title">
+                    <h1>POPULAR KYRGYZSTAN PLACES TO VISIT</h1>
+                    <p>Travel to Kyrgyzstan with Sun Travel to get the best travelling experience.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <img src="img/issyk-kulV8PIvXjVqrk-unsplash.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Issyk-Kul lake</h5>
+                                <p class="card-text">Issyk-Kul Тhе Pearl оf the Tien-Shan "As a gold dish inserted in
+                                    sharp rocks lay a lake. From the Sounh this basin is locked bу а chain оf snowy
+                                    glands.It is the seventh deepest lake in the world.</p>
+                                <a href="promotions.html">Starts from USD 555</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <img src="img/david-peters-fBw4rdIpYQ4-unsplash.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Ala-Kul Lake</h5>
+                                <p class="card-text">Ala-Kul lake is one of the most places in Kyrgyzstan. It is in the
+                                    mountains at an altitude of more than 3,500 m above sea level. The glacial lake
+                                    surrounded by high rocks has an unreal blue hue.</p>
+                                <a href="promotions.html">Starts from USD 640</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <img src="img/kyrgyzstan-4675649_1280.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Kakshaal Too</h5>
+                                <p class="card-text">Kakshaal Too is a large mountain range in the Central Tien-Shan. It
+                                    stretches for a length of 582 km between Kyrgyzstan and China. The highest point in
+                                    the range is Jengish Chokusu.</p>
+                                <a href="promotions.html">Starts from USD 700</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--card end-->
+    
+
+
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Social Contact</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                </div>
+                <div class="col-sm-3  col-lg-6 text-center">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="promotions.html">Promotions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
