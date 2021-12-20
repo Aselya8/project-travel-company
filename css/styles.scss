@@ -1,14 +1,26 @@
+$color-teal: #17A2B8;
 
 body{
     font-family: "Open Sans", sans-serif;
 }
-.jumbotron {
-    margin: 0;
-}
+
 .jumbotron{
+    margin: 0;
     padding: 30px;
     background-image: linear-gradient(to right, #ebf3f3, #a0dfdb, #70b5b8);
     color: white;
+}
+
+
+
+.form-group {
+    margin: 10px 10px;
+}
+
+.tab-content {
+    border: 1px;
+    border-top: none;
+    padding: 10px;
 }
 
 .navbar {
@@ -89,3 +101,9 @@ h1{
     }
 }
 
+#reserveModal {
+    .modal-header {
+        background-color: $color-teal;
+        content: $color-pale;
+    }
+}

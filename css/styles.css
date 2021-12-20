@@ -1,10 +1,9 @@
 body {
   font-family: "Open Sans", sans-serif; }
 
-.jumbotron {
-  margin: 0; }
 
 .jumbotron {
+  margin: 0;
   padding: 30px;
   background-image: linear-gradient(to right, #ebf3f3, #a0dfdb, #70b5b8);
   color: white; }
