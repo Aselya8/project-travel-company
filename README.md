@@ -6,3 +6,9 @@ This project was used purely to get comfortable with designing with Bootstrap.
 
 
 # project-travel-company
+
+Technologies Used:
+
+HTML
+CSS
+Bootstrap
